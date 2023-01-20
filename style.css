@@ -1,0 +1,119 @@
+
+*{
+    background:#F9FAFB;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    ;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    margin: 15px;
+    box-shadow: 0px 2px 0px  rgba(0, 0, 0, 0.1);
+}
+.navbar{
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.manu ul{
+   list-style-type: none;
+   display: flex;
+   gap: 40px;
+   font-size: 20px;
+}
+.manu ul li a{
+    text-decoration: none;
+    color: #000;;
+
+}
+.manu ul li a::after{
+    content: "";
+  height: 2px;
+  width: 0%;
+  background:crimson;
+  display: block;
+  transition: .5s ease-in-out;
+}
+.manu ul li a:hover::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background:crimson;
+    display: block; 
+}
+
+
+.logo{
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+.logo li a{
+    text-decoration: none;
+    color: black;
+}
+.logo li a:hover{
+    
+    color: crimson;
+    transition-duration: 1000ms;
+}
+.heros{
+  margin-top: 90px;
+ margin-left: 100px;
+ margin-right: 100px;
+ display: flex;
+ justify-content: space-between;
+}
+.photo{
+    height: 200px;
+    border-radius: 1.5vh;
+
+}
+.welcomeTextLeft h4{
+    font-family: monospace;
+    padding-left: 40px;
+
+}
+.welcomeTextLeft h1{
+    font-size:50px ;
+}
+.btn{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+   
+}
+.btn li{
+    list-style: none;
+
+
+    
+}
+.btn li a{
+    text-decoration: none;
+    color: black;
+    gap: 40px;
+    font-size: 20px;
+   
+}
+.btn-btn{
+background-color:crimson;
+padding: 7px 15px 10px 15px;
+border-radius: 20px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.btn li a{
+    color: azure;
+}
+.btn-btn:hover{
+    background-color: transparent;
+    color: crimson;
+    outline: 1px solid crimson;
+    transition-duration: 500ms;
+}
