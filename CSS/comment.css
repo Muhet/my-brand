@@ -282,7 +282,12 @@ label {
     #login {
         display: none;
     }
-
+    .menu {
+        cursor: pointer;
+        max-width: 30px;
+        display: block;
+    }
+    
     nav ul {
         position: fixed;
         display: flex;
@@ -292,7 +297,7 @@ label {
         background: #1f1652;
         margin-right: -30px;
         top: 70px;
-        right: 0px;
+        right: -600px;
         text-align: center;
         transition: all .5s;
         border-top-left-radius: 30px;

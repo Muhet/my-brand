@@ -86,7 +86,9 @@ nav ul li a::after {
     display: block;
     transition: .5s ease-in-out;
 }
-
+nav .log_sidebar{
+    display: none;
+}
 nav ul li a:hover::after {
     content: "";
     height: 2px;
@@ -205,7 +207,9 @@ h1 {
 
 }
 
-.btn-btn {}
+.welcomeTextLeft .save{
+    margin-top: 40px;
+}
 
 .btn li a {
     color: azure;
@@ -300,19 +304,15 @@ h1 {
     padding: 150px 70px 50px 70px;
     margin-top: -10px;
 }
-
 .myCV {
     margin: 40px 0 40px 60px;
 }
-
-
 .About {
     display: flex;
     background: #fff;
     padding: 60px 0 30px 0;
     justify-content: space-between;
     margin-top: 100px;
-
 }
 
 .bgIMGT {
@@ -435,15 +435,12 @@ h1 {
 #imageOne {
     max-width: 400px;
     padding: 15px 10px 10px 10px;
-
 }
 
 #imageTwo {
     max-width: 270px;
     padding: 15px 10px 10px 10px;
-
 }
-
 .firstCard {
     cursor: pointer;
     display: flex;
@@ -453,35 +450,27 @@ h1 {
     padding: 15px;
     border-radius: 6px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
-
 }
-
 .firstCard:hover {
     transition-duration: 500ms;
     box-shadow: 2px 0 8px #1F1652;
     transform: translateY(-2px);
 }
-
 .firstCard span {
     font-size: 14px;
     font-family: monospace;
     color: gray;
 }
-
 .works {
     display: flex;
     gap: 50px;
-
-
 }
-
 .MyWorksCards {
     display: flex;
     flex-direction: column;
     gap: 35px;
     justify-content: center;
 }
-
 .contact {
     margin-top: -60px;
     background: #1F1652;
@@ -489,7 +478,6 @@ h1 {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
-
 .myFform {
     background: #ffffff;
     display: flex;
@@ -498,9 +486,7 @@ h1 {
     border-radius: 30px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-
 }
-
 .input {
 
     border: none;
@@ -511,16 +497,9 @@ h1 {
     padding: 10px 15px;
 
 }
-
 .textArea::placeholder {
     text-transform: lowercase;
 }
-
-#ContactSub li {
-    color: #fff;
-    text-decoration: none;
-}
-
 .textArea {
     padding: 20px 7px;
     outline: none;
@@ -529,6 +508,23 @@ h1 {
     margin: 20px 53px 0 35px;
     outline: 1px solid lightgray;
 }
+.save{
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center;
+   }
+   .save_btn{
+    
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background: #1F1652;
+    color: #fff;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 4px 2px 5px rgba(0,0,0, .3);
+   }
 
 .TWImage {
     max-height: 30px;
@@ -743,10 +739,6 @@ h1 {
 }
 
 
-.submitBTN {
-    margin-top: 30px;
-}
-
 .CDNICN {
     max-width: 30px;
 
@@ -801,7 +793,10 @@ h1 {
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
     }
-
+    nav .log_sidebar{
+        display: block;
+    }
+   
     nav li {
         display: block;
         margin: 20px 0;
@@ -859,14 +854,25 @@ h1 {
 
     .photo {
         max-width: 300px;
-        margin-top: -70px;
+        margin-top: -100px;
     }
 
     .portrate {
         max-width: 300px;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
+    }
+   h4{
+        margin-top: 100px;
+        margin-bottom: -30px;
+        margin-left: 50px;
+        color: #1f1652;
+        font-family: 'Poppins', sans-serif;
     }
 
+    .welcomeTextLeft {
+margin-top: -50px;
+margin-bottom: -100px;
+    }
     /* ABOUT ME PAGE */
 
     .About {
@@ -950,34 +956,43 @@ h1 {
         font-size: 12px;
     }
 
-    .submitBTN {
-        margin-left: -200px;
-
-    }
-
-    .btn {
-        margin-left: -110px;
-    }
+   .save{
+    margin-top: 0px;
+   }
 
     /* FOOTER SECTION */
 
     .navbarFooter {
+        max-width: 250px;
         display: flex;
         gap: 60px;
-        margin-left: 70px;
+       margin-left: 85px;
+       
     }
 
     .navbarFooter ul {
         margin-left: -30px;
+       
+    }
+    .navbarFooter ul li{
+        font-size: 14px;
+     
     }
 
     .navbarFOne h4 {
         margin-left: -30px;
+        margin-top: -30px;
+        margin-bottom: 20px;
+        font-size: 15px;
     }
-
     .secfooter ul {
         margin: auto;
         padding: 10px 40px;
+        
+    }
+    .secfooter ul li{
+        margin-top: 20px;
+    }
     }
 
-}
+   

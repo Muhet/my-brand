@@ -83,13 +83,11 @@ nav a {
     margin: 20px 40px;
 }
 
-hr {
-    position: fixed;
-    width: 65px;
-    right: 40px;
-    margin-top: -2.8px;
-
-
+hr{
+    max-width: 70px;
+    display: flex;
+    margin-left: 65px;
+    margin-top: -6px;
 }
 
 #profil__name {
@@ -151,6 +149,7 @@ header {
 /* the beginning of main CSS */
 main {
     height: 80%;
+
    
 }
 main h1{
@@ -188,6 +187,48 @@ main .rightCards{
     min-width: inherit;
    
 }
+/* VIEW COMMENT PAGE DESIGN */
+/* ########################## */
+main h2{
+    text-align: center;
+}
+.cards_Main_comment{
+    margin-top: 20px;
+    display: flex;
+}
+.right_card_Comment{
+    max-width: 600px;
+    margin-left: 30px;
+}
+#webDesImage{
+ max-width: 400px;
+ height: 300px;
+ border-radius: 30px;
+}
+.Viewcomments{
+    outline: 1px solid lightgray;
+    box-shadow: 1px 0 4px rgba(0, 0, 0 , 0.3);
+    background: #e4e3e38e;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding:10px 20px;
+    margin-left: 80px;
+}.Viewcomments p{
+    color: #1f1652;
+    font-size: 15px;
+}
+.comentetorIMG{
+    margin-left: 250px;
+    margin-top: -20px;
+}
+#viewer{
+    width: 20px;
+}
+#viewer_name{
+    font-size: 12px;
+}
+/* END OF VIEW COMMENT PAGE DESIGN */
+/* ########################## */
 #likeICN{
    
     margin-left: -60px;
@@ -232,6 +273,56 @@ padding-right: 20px;
     background: #1f1652;
 }
 
+/* THE BEGINNING OF NEW ARTICLE DESIGN */
+/* ##################################### */
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+   
+  
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    outline: 1px solid lightgray;
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+.input{
+   width: 350px;
+    border: none;
+    outline: 1px solid lightgray;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+.textArea{
+    width: 350px;
+    border: none;
+    outline: 1px solid lightgray;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+.new_art_btn{
+    display: flex;
+    border: none;
+    max-width: fit-content;
+    padding: 10px 30px;
+    background: #1f1652;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Poppins',sans-serif;
+    
+}
+.new_btn_art{
+    display: flex;
+    justify-content: center;
+}
+
 /* the beginning of Table design CSS */
 /* ################################# */
 
@@ -265,15 +356,17 @@ padding-right: 20px;
 
   }
 #editIcon{
+    cursor: pointer;
     width: 20px;
 }
 #deleteIcon{
+    cursor: pointer;
     width: 20px;
 }
 .table_head{
-    background: #998fdd;
+    background: #1f1652;
     box-shadow: none;
-    color: #1f1652;
+    color: #fff;
     font-weight: 600;
     border-top-right-radius:20px;
     border-top-left-radius:20px;
@@ -294,9 +387,10 @@ padding-right: 20px;
 /* the beginning of footer CSS */
 
 footer {
-   height: 10%;
+    height: 10%;
     background: #9e9bb1;
     margin-left: -38px;
+    margin-left: -54px;
 }
 footer h3{
     text-align: center;
@@ -497,10 +591,12 @@ header{
     font-size: 10px;
 }
 #editIcon{
+    cursor: pointer;
     width: 15px;
     height: 15px;
 }
 #deleteIcon{
+    cursor: pointer;
     width: 15px;
     height: 15px;
 }
@@ -513,4 +609,90 @@ header{
 footer{
     display: none;
 }
+
+/* THE BEGINNING OF COMMENT VIEWS */
+/* ################################# */
+
+main h2{
+    text-align: center;
+}
+.cards_Main_comment{
+   flex-direction: column;
+}
+.right_card_Comment{
+    max-width: 350px;
+    margin-left: -40px;;
+}
+#webDesImage{
+ max-width: 400px;
+height: 200px;
+}
+.Viewcomments{
+ max-width: 400px;
+}
+.Viewcomments p{
+    color: #1f1652;
+    font-size: 15px;
+}
+.comentetorIMG{
+    margin-left: 250px;
+    margin-top: -20px;
+}
+#viewer{
+display: none;
+}
+#viewer_name{
+  display: none;
+}
+
+/* THE BEGINNING OF NEW ARTICLE DESIGN */
+/* ##################################### */
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+   
+  
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    outline: 1px solid lightgray;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+.input{
+   width: 250px;
+    border: none;
+    outline: 1px solid lightgray;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+.textArea{
+    width: 250px;
+    border: none;
+    outline: 1px solid lightgray;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+.new_art_btn{
+    display: flex;
+    border: none;
+    max-width: fit-content;
+    padding: 10px 30px;
+    background: #1f1652;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Poppins',sans-serif;
+    
+}
+.new_btn_art{
+    display: flex;
+    justify-content: center;
+}
+
 }
