@@ -86,9 +86,11 @@ nav ul li a::after {
     display: block;
     transition: .5s ease-in-out;
 }
-nav .log_sidebar{
+
+nav .log_sidebar {
     display: none;
 }
+
 nav ul li a:hover::after {
     content: "";
     height: 2px;
@@ -135,15 +137,27 @@ nav ul li a:hover::after {
     max-width: 600px;
 }
 
-.welcomeTextLeft h4 {
+.welcome_my_name h4 {
 
+    margin-top: 150px;
     padding-left: 40px;
-    margin-bottom: -20px;
     font-size: 17px;
     color: #1F1652;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
 }
+
+.welcome_my_name h1 {
+    font-size: 4rem;
+    font-size: 40px;
+    color: #1F1652;
+    padding-left: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+
 
 hr {
     margin-top: -30px;
@@ -152,27 +166,11 @@ hr {
     opacity: 40%;
 }
 
-.welcomeTextLeft #myName {
-    margin-top: 50px;
-    color: #1F1652;
-    font-family: monospace;
-    font-size: 17px;
-}
 
-h1 {
-    font-size: 4rem;
-    font-size: 40px;
-    margin-bottom: 4px;
-    color: rgb(116, 116, 116);
-    padding-left: 40px;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
-}
+.welcomeTextLeft .biographie {}
 
-.biographie {
-    color: gray;
-    max-width: 300px;
-
+.card {
+    margin-top: -180px;
 }
 
 .btnSubmit {
@@ -207,7 +205,7 @@ h1 {
 
 }
 
-.welcomeTextLeft .save{
+.welcomeTextLeft .save {
     margin-top: 40px;
 }
 
@@ -248,9 +246,8 @@ h1 {
     text-align: center;
 }
 
-#lName {
-
-
+.welcome_my_name #lName {
+    font-family: sans-serif;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
 }
@@ -304,9 +301,11 @@ h1 {
     padding: 150px 70px 50px 70px;
     margin-top: -10px;
 }
+
 .myCV {
     margin: 40px 0 40px 60px;
 }
+
 .About {
     display: flex;
     background: #fff;
@@ -416,16 +415,20 @@ h1 {
     margin: 0;
     display: flex;
     justify-content: center;
+
 }
+
 .desc-skills {
     margin: 15px 30px;
     max-width: 500px;
 }
+
 .MyWorks {
     margin: 30px 0 60px 0;
     background-color: #ffffff;
     padding: 40px;
 }
+
 #imageOne {
     max-width: 400px;
     padding: 15px 10px 10px 10px;
@@ -435,6 +438,7 @@ h1 {
     max-width: 270px;
     padding: 15px 10px 10px 10px;
 }
+
 .firstCard {
     cursor: pointer;
     display: flex;
@@ -445,26 +449,31 @@ h1 {
     border-radius: 6px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 .firstCard:hover {
     transition-duration: 500ms;
     box-shadow: 2px 0 8px #1F1652;
     transform: translateY(-2px);
 }
+
 .firstCard span {
     font-size: 14px;
     font-family: monospace;
     color: gray;
 }
+
 .works {
     display: flex;
     gap: 50px;
 }
+
 .MyWorksCards {
     display: flex;
     flex-direction: column;
     gap: 35px;
     justify-content: center;
 }
+
 .contact {
     margin-top: -60px;
     background: #1F1652;
@@ -472,6 +481,7 @@ h1 {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
+
 .myFform {
     background: #ffffff;
     display: flex;
@@ -481,6 +491,7 @@ h1 {
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 .input {
 
     border: none;
@@ -491,9 +502,11 @@ h1 {
     padding: 10px 15px;
 
 }
+
 .textArea::placeholder {
     text-transform: lowercase;
 }
+
 .textArea {
     padding: 20px 7px;
     outline: none;
@@ -502,14 +515,16 @@ h1 {
     margin: 20px 53px 0 35px;
     outline: 1px solid lightgray;
 }
-.save{
+
+.save {
     display: flex;
     cursor: pointer;
     margin-top: 20px;
     justify-content: center;
-   }
-   .save_btn{
-    
+}
+
+.save_btn {
+
     cursor: pointer;
     padding: 10px 20px;
     border: none;
@@ -517,8 +532,8 @@ h1 {
     color: #fff;
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 4px 2px 5px rgba(0,0,0, .3);
-   }
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, .3);
+}
 
 .TWImage {
     max-height: 30px;
@@ -767,7 +782,7 @@ h1 {
     }
 }
 
-@media (max-width: 909px) {
+@media only screen and (max-width: 909px) {
     #login {
         display: none;
     }
@@ -780,17 +795,28 @@ h1 {
         height: 606px;
         background: #1f1652;
         margin-right: -30px;
-        top: 70px;
+        top: 0;
         right: -600px;
         text-align: center;
         transition: all .5s;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
     }
-    nav .log_sidebar{
+    #close {
+        cursor: pointer;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    nav .log_sidebar {
         display: block;
     }
-   
+    #close {
+        cursor: pointer;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
     nav li {
         display: block;
         margin: 20px 0;
@@ -801,7 +827,7 @@ h1 {
     }
 
     nav ul.show {
-        right: 0;
+        right: -3px;
     }
 
     .About {
@@ -819,10 +845,15 @@ h1 {
 
 }
 
-@media(max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .iconmenu {
         width: 40px;
         display: block;
+    }
+
+    #close {
+        margin-top: 30px;
+        margin-left: 20px;
     }
 
     .logo {
@@ -855,18 +886,34 @@ h1 {
         max-width: 300px;
         margin-bottom: 70px;
     }
-   h4{
+
+    .welcome_my_name h4 {
         margin-top: 100px;
         margin-bottom: -30px;
-        margin-left: 50px;
+        margin-left: 80px;
         color: #1f1652;
         font-family: 'Poppins', sans-serif;
     }
 
-    .welcomeTextLeft {
-margin-top: -50px;
-margin-bottom: -100px;
+    .welcome_my_name h1 {
+
+        margin-left: -15px;
+
     }
+
+    .menu {
+        margin-right: 20px;
+    }
+
+    .welcomeTextLeft {
+        margin-top: -30px;
+        margin-bottom: -100px;
+    }
+
+    .card {
+        margin-top: 0;
+    }
+
     /* ABOUT ME PAGE */
 
     .About {
@@ -950,9 +997,9 @@ margin-bottom: -100px;
         font-size: 12px;
     }
 
-   .save{
-    margin-top: 0px;
-   }
+    .save {
+        margin-top: 0px;
+    }
 
     /* FOOTER SECTION */
 
@@ -960,17 +1007,18 @@ margin-bottom: -100px;
         max-width: 250px;
         display: flex;
         gap: 60px;
-       margin-left: 85px;
-       
+        margin-left: 85px;
+
     }
 
     .navbarFooter ul {
         margin-left: -30px;
-       
+
     }
-    .navbarFooter ul li{
+
+    .navbarFooter ul li {
         font-size: 14px;
-     
+
     }
 
     .navbarFOne h4 {
@@ -979,14 +1027,14 @@ margin-bottom: -100px;
         margin-bottom: 20px;
         font-size: 15px;
     }
+
     .secfooter ul {
         margin: auto;
         padding: 10px 40px;
-        
-    }
-    .secfooter ul li{
-        margin-top: 20px;
-    }
+
     }
 
-   
+    .secfooter ul li {
+        margin-top: 20px;
+    }
+}

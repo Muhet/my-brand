@@ -219,14 +219,25 @@ nav ul li a:hover::after {
         height: 606px;
         background: #1f1652;
         margin-right: -30px;
-        top: 70px;
+        top: -16px;
         right: -600px;
         text-align: center;
         transition: all .5s;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
     }
-  
+    #close {
+        cursor: pointer;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+  .menu{
+    margin-right: 20px;
+  }
+  .logo {
+    max-width: 100px;
+}
+
    nav li{
     display: block;
     margin: 20px 0;
@@ -235,10 +246,10 @@ nav ul li a:hover::after {
     color: white;
    }
    nav ul.show{
-    right: 0;
+    right: -10px;
    }
 }
-@media(max-width:600px){
+@media only screen and (max-width:600px){
     .main {
         flex-direction: column;
         margin:-20px 0 0 0;
