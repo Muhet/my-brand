@@ -167,8 +167,6 @@ hr {
 }
 
 
-.welcomeTextLeft .biographie {}
-
 .card {
     margin-top: -180px;
 }
@@ -807,9 +805,7 @@ nav{
     gap: 40px;
     margin-right: -50px;
 }
-.card{
- 
-}
+
 @media only screen and (max-width: 909px) {
     #login {
         display: none;
