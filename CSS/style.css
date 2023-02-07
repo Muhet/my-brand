@@ -990,8 +990,11 @@ font-size: 2rem;
 
     .blogCard {
         margin: 0 20px;
+       max-width: 600px;
     }
-
+#blogIMG{
+    max-width: 335px;
+}
     .contactOne {
         margin: 0;
     }
