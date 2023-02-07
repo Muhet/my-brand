@@ -10,7 +10,7 @@ body {
     color: #1f1652;
 }
 
-nav ul{
+nav ul {
     max-width: 150px;
     height: 100vh;
     background: #1f1652;
@@ -20,12 +20,14 @@ nav ul{
     text-align: center;
     display: fixed;
     top: -20px;
-    left:20px;
+    left: 20px;
 
 }
-ul.show{
-    left:0;
-   }
+
+ul.show {
+    left: 0;
+}
+
 .container {
     display: flex;
 }
@@ -46,23 +48,26 @@ ul.show{
     border-radius: 20px;
 }
 
-.list{
-align-items: center;
-margin-top: 100px;
-gap: 10px;
+.list {
+    align-items: center;
+    margin-top: 100px;
+    gap: 10px;
 }
-.list li{
+
+.list li {
     margin-top: 20px;
 }
-.back__btn{
+
+.back__btn {
     cursor: pointer;
     background: #fff;
     max-width: fit-content;
-    margin:200px auto  0 auto;
+    margin: 200px auto 0 auto;
     border-radius: 50%;
     padding: 2px 5px;
 }
-.backBTN{
+
+.backBTN {
     max-width: 30px;
 
 }
@@ -83,7 +88,7 @@ nav a {
     margin: 20px 40px;
 }
 
-hr{
+hr {
     max-width: 70px;
     display: flex;
     margin-left: 65px;
@@ -116,13 +121,14 @@ header {
 #my__name {
     margin-top: -5px;
 }
-#my__nameSidebar{
+
+#my__nameSidebar {
     display: none;
-    color:white;
+    color: white;
     font-size: 12px;
     margin-top: 8px;
     margin-left: -10px;
-   
+
 }
 
 #profile {
@@ -130,6 +136,7 @@ header {
     outline: 1px solid #1f1652;
     border-radius: 50%;
 }
+
 #profileSidebar {
     display: none;
     max-width: 40px;
@@ -137,7 +144,8 @@ header {
     border-radius: 50%;
     margin: -30px 50px 0 50px;
 }
-.menu{
+
+.menu {
     display: none;
     max-width: 25px;
     max-height: 25px;
@@ -150,47 +158,53 @@ header {
 main {
     height: 80%;
 
-   
+
 }
-main h1{
+
+main h1 {
     text-align: center;
     font-size: 1.5rem;
 }
-.cards_Main_bords{
+
+.cards_Main_bords {
     display: flex;
-    margin-top:60px;
+    margin-top: 60px;
 }
-main .leftCards{
+
+main .leftCards {
     width: 50%;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     margin-left: 100px;
-  
+
 }
-main .rightCards{
+
+main .rightCards {
     margin-top: 50px;
     width: 50%;
     display: flex;
     flex-direction: column;
     margin-left: -60px;
-    
+
 }
 
-.sylinder{
+.sylinder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-   border-radius: 55px;
+    border-radius: 55px;
     width: 300px;
     height: 107px;
     border: 1px solid #1f1652;
-    padding-left: 0px;;
+    padding-left: 0px;
+    ;
     background: #1f1652;
     margin-bottom: 70px;
-    
-    
+
+
 }
-.sylinder h2{
+
+.sylinder h2 {
     position: relative;
     color: #fff;
     text-align: center;
@@ -205,8 +219,8 @@ main .rightCards{
     max-width: fit-content;
     background: #fff;
     margin-left: 198px;
-   
-    
+
+
 }
 
 .innerCircle h1 {
@@ -221,84 +235,102 @@ main .rightCards{
     font-size: 3.8rem;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
-    font-family:monospace;
+    font-family: monospace;
 
 }
-.icon{
-    margin-left:10px;
+
+.icon {
+    margin-left: 10px;
 }
-#likes{
-max-width: 40px;
-margin: 30px 0 20px 20px;
+
+#likes {
+    max-width: 40px;
+    margin: 30px 0 20px 20px;
 
 }
-.word{
+
+.word {
     margin-left: -25px;
     margin-right: 0px;
 }
+
 /* VIEW COMMENT PAGE DESIGN */
 /* ########################## */
-main h2{
+main h2 {
     text-align: center;
 }
-.cards_Main_comment{
+
+.cards_Main_comment {
     margin-top: 20px;
     display: flex;
 }
-.right_card_Comment{
+
+.right_card_Comment {
     max-width: 600px;
     margin-left: 30px;
 }
-#webDesImage{
- max-width: 400px;
- height: 300px;
- border-radius: 30px;
+
+#webDesImage {
+    max-width: 400px;
+    height: 300px;
+    border-radius: 30px;
 }
-.Viewcomments{
+
+.Viewcomments {
     outline: 1px solid lightgray;
-    box-shadow: 1px 0 4px rgba(0, 0, 0 , 0.3);
+    box-shadow: 1px 0 4px rgba(0, 0, 0, 0.3);
     background: #e4e3e38e;
     border-radius: 20px;
     margin-top: 20px;
-    padding:10px 20px;
+    padding: 10px 20px;
     margin-left: 80px;
-}.Viewcomments p{
+}
+
+.Viewcomments p {
     color: #1f1652;
     font-size: 15px;
 }
-.comentetorIMG{
+
+.comentetorIMG {
     margin-left: 250px;
     margin-top: -20px;
 }
-#viewer{
+
+#viewer {
     width: 20px;
 }
-#viewer_name{
+
+#viewer_name {
     font-size: 12px;
 }
+
 /* END OF VIEW COMMENT PAGE DESIGN */
 /* ########################## */
-#likeICN{
-   
+#likeICN {
+
     margin-left: -60px;
 
 }
-#viewICN{
-   
+
+#viewICN {
+
     margin-left: -55px;
     width: 50px;
 
 }
-.comentIcon{
-margin-left: -60px;
-margin-top: 50px;
-padding-bottom: -20px;
+
+.comentIcon {
+    margin-left: -60px;
+    margin-top: 50px;
+    padding-bottom: -20px;
 }
-#comentICN{
-width: 40px;
-padding-right: 20px;
+
+#comentICN {
+    width: 40px;
+    padding-right: 20px;
 }
-.leftCards label{
+
+.leftCards label {
     display: inline-block;
     justify-content: space-between;
     width: fit-content;
@@ -308,17 +340,19 @@ padding-right: 20px;
     border-radius: 50px;
     background: #1f1652;
 }
-.rightCards{
+
+.rightCards {
     margin-top: 40px;
-    
+
 }
-.rightCards label{
+
+.rightCards label {
     display: inline-block;
     justify-content: space-around;
     width: fit-content;
     border: 1px solid #1f1652;
     padding: 20px 0 20px 40px;
-    margin:auto 0;
+    margin: auto 0;
     border-radius: 50px;
     background: #1f1652;
 }
@@ -326,16 +360,17 @@ padding-right: 20px;
 /* THE BEGINNING OF NEW ARTICLE DESIGN */
 /* ##################################### */
 
-.form-group{
+.form-group {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     margin-top: 50px;
-   
-  
+
+
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -343,21 +378,29 @@ padding-right: 20px;
     padding: 30px 40px;
     border-radius: 20px;
 }
-.input{
-   width: 350px;
-    border: none;
-    outline: 1px solid lightgray;
-    padding: 10px 20px;
-    border-radius: 2px;
-}
-.textArea{
+
+.input {
     width: 350px;
     border: none;
     outline: 1px solid lightgray;
     padding: 10px 20px;
     border-radius: 2px;
 }
-.new_art_btn{
+
+.inputSearch::placeholder{
+    padding-left: 20px;
+}
+
+
+.textArea {
+    width: 350px;
+    border: none;
+    outline: 1px solid lightgray;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+
+.new_art_btn {
     display: flex;
     border: none;
     max-width: fit-content;
@@ -365,10 +408,11 @@ padding-right: 20px;
     background: #1f1652;
     color: #fff;
     border-radius: 10px;
-    font-family: 'Poppins',sans-serif;
-    
+    font-family: 'Poppins', sans-serif;
+
 }
-.new_btn_art{
+
+.new_btn_art {
     display: flex;
     justify-content: center;
 }
@@ -377,10 +421,13 @@ padding-right: 20px;
 /* ################################# */
 
 
-.table_box{
-    margin: 50px auto;
-  }
-.table_row{
+.table_box {
+    margin: 20px 0;
+
+}
+
+
+.table_row {
     display: table;
     width: 80%;
     margin: 10px auto;
@@ -388,45 +435,53 @@ padding-right: 20px;
     font-family: 'Poppins', sans-serif;
     padding: 12px 0;
     color: #1f1652;
-    font-size:13px ;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0 , 0.3);
-  }
-  .table_cell{
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.table_cell {
     display: table-cell;
     width: 30%;
     text-align: center;
     padding: 4px 0;
     border-left: 1px solid #d6d4d4;
     vertical-align: middle;
-    
-  }
-  .actionIcons{
+
+}
+
+.actionIcons {
     display: flex;
     justify-content: space-around;
 
-  }
-#editIcon{
+}
+
+#editIcon {
     cursor: pointer;
     width: 20px;
 }
-#deleteIcon{
+
+#deleteIcon {
     cursor: pointer;
     width: 20px;
 }
-.table_head{
+
+.table_head {
     background: #1f1652;
     box-shadow: none;
     color: #fff;
     font-weight: 600;
-    border-top-right-radius:20px;
-    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
+
 .table_head .table_cell {
     border-left: none;
 }
-.first_cell{
+
+.first_cell {
     width: 150px;
-    padding:0 10px;
+    padding: 0 10px;
 }
 
 /* the end of Table design CSS */
@@ -442,12 +497,14 @@ footer {
     margin-left: -38px;
     margin-left: -54px;
 }
-footer h3{
+
+footer h3 {
     text-align: center;
     width: auto;
-   
+
     line-height: 80px;
 }
+
 /* the end of footer CSS */
 
 @media(max-width: 909px) {
@@ -466,168 +523,189 @@ footer h3{
         background: #fff;
         border-radius: 20px;
     }
+
     #profile {
-       display: none;
-    }
-    hr{
         display: none;
     }
-    #my__name{
+
+    hr {
         display: none;
     }
-    #my__nameSidebar{
+
+    #my__name {
+        display: none;
+    }
+
+    #my__nameSidebar {
         display: block;
-       
+
     }
+
     #profileSidebar {
         display: block;
     }
-    nav ul{
+
+    nav ul {
         position: fixed;
         top: 0;
         left: -150px;
         transition: all .5s;
         border-top-right-radius: 20px;
     }
-    nav ul li{
-      padding-top: -60px;
+
+    nav ul li {
+        padding-top: -60px;
     }
+
     /* The end of Sidebar section CSS */
     /* ################################# */
 
-      /* The beginning header of Sidebar section CSS */
+    /* The beginning header of Sidebar section CSS */
     /* ################################# */
-header{
-    margin-right: -40px;
-}
-    .menu{
+    header {
+        margin-right: -40px;
+    }
+
+    .menu {
         cursor: pointer;
         display: block;
         float: right;
         padding: 10px;
         margin-top: -10px;
     }
-    #setting{
+
+    #setting {
         max-width: 25px;
     }
 
-      /* The end of header section CSS */
+    /* The end of header section CSS */
     /* ################################# */
 
- /* The beginning of Main section CSS */
+    /* The beginning of Main section CSS */
     /* ################################# */
-    .cards_Main_bords{
+    .cards_Main_bords {
         flex-direction: column;
     }
 
 
 
 
-  
-   /* DASHBOARD OF LIST OF ARTICLES */
-   /* ################################# */
-  
-/* The beginning of Main section CSS */
+
+    /* DASHBOARD OF LIST OF ARTICLES */
+    /* ################################# */
+
+    /* The beginning of Main section CSS */
     /* ################################# */
 }
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
 
     /* The the beginnig of Sidebar section CSS */
     /* ################################# */
 
     #profileSidebar {
-     margin: -30px auto;
+        margin: -30px auto;
     }
-    #my__nameSidebar{
-        margin-top: 35px ;
+
+    #my__nameSidebar {
+        margin-top: 35px;
         margin-bottom: 0;
         margin-right: auto;
         margin-left: auto;
     }
+
     nav ul {
         margin: auto;
         width: 250px;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 12px;
     }
-  
-          /* The beginning header of Sidebar section CSS */
+
+    /* The beginning header of Sidebar section CSS */
     /* ################################# */
-header{
-    margin-right: -40px;
-}
-    .menu{
+    header {
+        margin-right: -40px;
+    }
+
+    .menu {
         display: block;
         float: right;
         padding: 10px;
         margin-top: -10px;
     }
-    #setting{
+
+    #setting {
         max-width: 35px;
     }
 
-      /* The end of header section CSS */
+    /* The end of header section CSS */
     /* ################################# */
 
-         /* The beginning of main section CSS */
+    /* The beginning of main section CSS */
     /* ################################# */
-    .cards_Main_bords{
-        margin-top: 0px;
+    .cards_Main_bords {
+        margin-top: 40px;
+        margin-left: 25px;
     }
-main h1{
-    margin-left: -100px;
-}
-    main .leftCards{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
+
+    main h1 {
         margin-top: 50px;
-        margin-left: -70px;
-      
+        margin-left: -100px;
     }
-    main .rightCards{
+
+    main .leftCards {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: -70px;
+
+    }
+
+    main .rightCards {
         margin-top: 0px;
         width: 50%;
         display: flex;
         flex-direction: column;
         margin-left: -70px;
-        
+
     }
-    
-    .sylinder{
+
+    .sylinder {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-       border-radius: 55px;
+        border-radius: 55px;
         width: 300px;
-        height: 107px;
+        height: 90px;
         border: 1px solid #1f1652;
         padding-left: 0px;;
         background: #1f1652;
-        margin-bottom: 30px;
-        
-        
+       padding-bottom: 4px;
+       margin-bottom: 20px;
+
+
     }
-    .sylinder h2{
+
+    .sylinder h2 {
         position: relative;
         color: #fff;
         text-align: center;
-        margin-top: 40px;
+        margin-top: 30px;
+        font-size: 20px;
     }
-    
+
     .outerCicle {
         position: absolute;
         border: 1px solid #1f1652;
-        padding: 3px;
+        padding: 2px -1px 0 0;
         border-radius: 50%;
         max-width: fit-content;
         background: #fff;
         margin-left: 198px;
-       
-        
     }
-    
+  
     .innerCircle h1 {
         display: flex;
         outline: 1px solid #1f1652;
@@ -637,141 +715,163 @@ main h1{
         border-radius: 50%;
         padding: 13px 20px;
         color: #1f1652;
-        font-size: 3.8rem;
+        font-size: 3.1rem;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1px;
-        font-family:monospace;
-    
+        font-family: monospace;
+
     }
-    .icon{
-        margin-left:10px;
+
+    .icon {
+        margin-left: 10px;
     }
-    #likes{
-    max-width: 40px;
-    margin: 30px 0 20px 20px;
-    
+
+    #likes {
+        max-width: 40px;
+        margin: 30px 0 20px 20px;
+
     }
-    .word{
-     
+
+    .word {
+
         margin-left: -25px;
         margin-right: 0px;
     }
 
 
 
-/* THE BEGINNING OF TABLE DESIGN */
-/* ################################## */
-.table_box{
-  width: 430px;
-  margin-left: -90px;
-    
-}  
-.table_row{
-    font-size: 10px;
-}
-#editIcon{
-    cursor: pointer;
-    width: 15px;
-    height: 15px;
-}
-#deleteIcon{
-    cursor: pointer;
-    width: 15px;
-    height: 15px;
-}
-.last_cell{
-    padding-right: 10px;
-}
-/* THE END OF TABLE DESIGN */
-/* ################################## */
-/* THE BEGINNING OF FOOTER DESIGN */
-footer{
-    display: none;
-}
+    /* THE BEGINNING OF TABLE DESIGN */
+    /* ################################## */
+    .table_box {
+        width: 430px;
+        margin-left: -90px;
 
-/* THE BEGINNING OF COMMENT VIEWS */
-/* ################################# */
+    }
 
-main h2{
-    text-align: center;
-}
-.cards_Main_comment{
-   flex-direction: column;
-}
-.right_card_Comment{
-    max-width: 350px;
-    margin-left: -40px;;
-}
-#webDesImage{
- max-width: 400px;
-height: 200px;
-}
-.Viewcomments{
- max-width: 400px;
-}
-.Viewcomments p{
-    color: #1f1652;
-    font-size: 15px;
-}
-.comentetorIMG{
-    margin-left: 250px;
-    margin-top: -20px;
-}
-#viewer{
-display: none;
-}
-#viewer_name{
-  display: none;
-}
+    .table_row {
+        font-size: 10px;
+    }
 
-/* THE BEGINNING OF NEW ARTICLE DESIGN */
-/* ##################################### */
+    #editIcon {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+    }
 
-.form-group{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-top: 50px;
-   
-  
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    outline: 1px solid lightgray;
-    padding: 30px 20px;
-    border-radius: 20px;
-}
-.input{
-   width: 250px;
-    border: none;
-    outline: 1px solid lightgray;
-    padding: 10px 20px;
-    border-radius: 2px;
-}
-.textArea{
-    width: 250px;
-    border: none;
-    outline: 1px solid lightgray;
-    padding: 10px 20px;
-    border-radius: 2px;
-}
-.new_art_btn{
-    display: flex;
-    border: none;
-    max-width: fit-content;
-    padding: 10px 30px;
-    background: #1f1652;
-    color: #fff;
-    border-radius: 10px;
-    font-family: 'Poppins',sans-serif;
-    
-}
-.new_btn_art{
-    display: flex;
-    justify-content: center;
-}
+    #deleteIcon {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+    }
+
+    .last_cell {
+        padding-right: 10px;
+    }
+
+    /* THE END OF TABLE DESIGN */
+    /* ################################## */
+    /* THE BEGINNING OF FOOTER DESIGN */
+    footer {
+        display: none;
+    }
+
+    /* THE BEGINNING OF COMMENT VIEWS */
+    /* ################################# */
+
+    main h2 {
+        text-align: center;
+    }
+
+    .cards_Main_comment {
+        flex-direction: column;
+    }
+
+    .right_card_Comment {
+        max-width: 350px;
+        margin-left: -40px;
+        ;
+    }
+
+    #webDesImage {
+        max-width: 400px;
+        height: 200px;
+    }
+
+    .Viewcomments {
+        max-width: 400px;
+    }
+
+    .Viewcomments p {
+        color: #1f1652;
+        font-size: 15px;
+    }
+
+    .comentetorIMG {
+        margin-left: 250px;
+        margin-top: -20px;
+    }
+
+    #viewer {
+        display: none;
+    }
+
+    #viewer_name {
+        display: none;
+    }
+
+    /* THE BEGINNING OF NEW ARTICLE DESIGN */
+    /* ##################################### */
+
+    .form-group {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: -100px;
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        outline: 1px solid lightgray;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .input {
+        width: 250px;
+        border: none;
+        outline: 1px solid lightgray;
+        padding: 10px 20px;
+        border-radius: 2px;
+    }
+
+    .textArea {
+        width: 250px;
+        border: none;
+        outline: 1px solid lightgray;
+        padding: 10px 20px;
+        border-radius: 2px;
+    }
+
+    .new_art_btn {
+        display: flex;
+        border: none;
+        max-width: fit-content;
+        padding: 10px 30px;
+        background: #1f1652;
+        color: #fff;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    .new_btn_art {
+        display: flex;
+        justify-content: center;
+    }
 
 }
