@@ -14,10 +14,12 @@ body {
 }
 
 .containers {
-    width: 100%;
+    width: 90%;
     min-height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
+    margin: auto;
+ 
 }
 
 #login {
@@ -169,6 +171,7 @@ hr {
 
 .card {
     margin-top: -180px;
+   
 }
 
 .btnSubmit {
@@ -463,6 +466,7 @@ hr {
 .works {
     display: flex;
     gap: 50px;
+    justify-content: center;
 }
 
 .MyWorksCards {
@@ -939,6 +943,7 @@ font-size: 2rem;
 
     .card {
         margin-top: 100px;
+        margin-left: -30px;
     }
 
     /* ABOUT ME PAGE */
@@ -993,7 +998,7 @@ font-size: 2rem;
        max-width: 600px;
     }
 #blogIMG{
-    max-width: 335px;
+    max-width: 295px;
 }
     .contactOne {
         margin: 0;
@@ -1001,10 +1006,13 @@ font-size: 2rem;
 
     .myFform {
         gap: 10px;
-        margin: 50px 20px 100px 20px;
+        margin: 50px 0 100px 0;
 
     }
 
+    .form{
+       margin-left: 20px;
+    }
     .input {
         margin-bottom: 10px;
         width: 255px;

@@ -12,47 +12,64 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS/Admin.css">
     <title>My-Brand--Admin</title>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script> 
-    <script>
-        $(document).ready(function(){
-            $('.menu').click(function(){
-                $('ul').toggleClass('show')
-            })
-        })
-    </script>
+  
+   
 </head>
 
 <body>
     <div class="container">
-        <div class="leftSide">
-            <nav>
-               
-                <ul>
-                    <label class="my__logo">
-                        <img src="../images/img/Logo.png" alt="" id="my__logo">
-                        <img src="../images/img/dario.jpg" alt="" id="profileSidebar"><span id="my__nameSidebar">Darius</span>
-                    </label>
-                    <div class="list">
-                    <li><a href="Admin.html" class="">Dashboard</a></li>
-                    <li><a href="comentList.html" class="">Comments</a></li>
-                    <li><a href="new_article.html" class="">New article</a></li>
-                    <li><a href="ArticleList.html" class="">List of Articles</a></li>
-                </div>
-                <div class="back__btn">
-                    <img src="../images/img/BackICNBlue.png" alt="backBTN" class="backBTN">
-                </div>
-                </ul>
-                <di></di>
-                <di></di>
+        <div class="sidebar active">
+
+          
+    
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo">
+            <label for="logo" id="logo">DARIYOZ</label>
+        </div>
+        <div class="links">
+           
+            <a href="" >
+                Dashboard
+                <i class="fa fa-home "></i>
+                
+            </a>
+            <a href="">
+               Article List
+               <i class="fa fa-list"></i>
+                
+            </a>
+            <a href="">
+        Coments List
+                <i class="fa fa-comments"></i>
               
-            </nav>
+            </a>
+            <a href="">
+                new Article
+                <i class="fa fa-newspaper"></i>
+                
+            </a>
+        </div>
+        <div class="logout "">
+            <a href="">
+                Logout
+                <i class="fa fa-newspaper" aria-hidden="true"></i>
+                
+            </a>
+        </div>
+    </div>
+         
         </div>
         <div class="rightSide">
             <header>
                 <span class="profiles">
-                    <img src="../images/img/Settings.png" alt="" id="setting">
+                    <img src="../images/Reminder.png" alt="" id="setting">
                     <img src="../images/img/dario.jpg" alt="" id="profile"><span id="my__name">Darius</span><hr/>
                     <img src="../images/img/MenuIcon.png" alt="menu" class="menu">
                 </span>
@@ -124,7 +141,7 @@
         </div>
 
     </div>
-
+    <script src="../JS/index.js"></script>
 </body>
 
 </html>

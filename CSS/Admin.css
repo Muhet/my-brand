@@ -4,12 +4,126 @@
     text-decoration: none;
     list-style-type: none;
 }
-
 body {
+    background: #F9FAFB;
     font-family: 'Poppins', sans-serif;
     color: #1f1652;
 }
 
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -160px;
+    width: 170px;
+    height: 100%;
+    background: #1f1652;
+    border-top-right-radius:20px ;
+    transition: all 300ms ease-in-out;
+}
+.sidebar .toggle-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height:30px;
+ cursor: pointer;
+ 
+
+}
+.sidebar .toggle-btn span{
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background: #fff;
+    transform: translate(0%);
+    transition: all 300ms ease-in-out;
+}
+.sidebar .toggle-btn span:nth-child(1){
+    top: 45%;
+}
+.sidebar .toggle-btn span:nth-child(2){
+    top: 90%;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    justify-content: center;
+    margin:150px 0 0 -29px;
+   
+}
+#logo{
+    cursor: pointer;
+    border:1px solid #fff;
+    padding:5px 15px;
+    border-radius: 20px;
+    color: #1f1652;
+    background: #f5f5f5;
+
+}
+
+.links a{
+    display: block;
+    text-decoration: none;
+    color: #f5f5f5;
+    cursor: pointer;
+    border-bottom: 1px solid #505050;
+    margin-left: 20px;
+    padding-right: 20px;
+    text-align: right;
+    
+} 
+ i{
+    display: inline-block;
+    text-align: right;
+    margin-left: 25px;
+   
+}
+.links a:active,
+.links a:focus,
+.links a:hover{
+    background: #fff;
+    color: #1f1652;
+    transition: all 200ms ease-in;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.logo{
+    margin: 80px 0 0 50px;
+    margin-left: 15px;
+   
+}
+.logo label{
+   color: #fff;
+}
+.logout{
+    margin: 50px 0 0 0px;
+    border-bottom: none;
+
+}
+.logout a{
+    color: #fff;
+    text-decoration: none;
+    margin: 50px 0 -50px 50px;
+}
+.sidebar.active{
+    left: 0px;
+}
+.sidebar.active .toggle-btn span:nth-child(1){
+    top: 50%;
+    transform: translateY(50%) rotate(45deg);
+   background:rgb(236, 66, 66);
+}
+.sidebar.active .toggle-btn span:nth-child(2){
+   display: none;
+}
+.sidebar.active .toggle-btn span:nth-child(3){
+    top: 50%;
+    transform: translateY(50%) rotate(-45deg);
+    background: rgb(236, 66, 66);
+}
+
+/* 
 nav ul {
     max-width: 150px;
     height: 100vh;
@@ -22,33 +136,36 @@ nav ul {
     top: -20px;
     left: 20px;
 
-}
-
+} */
+/* 
 ul.show {
     left: 0;
 }
-
+ */
 .container {
     display: flex;
 }
 
-.leftSide {
+.sidebar {
     width: 15%;
 }
 
 .rightSide {
-    width: 85%;
+    margin: 40px 0 0 150px;
+}
+#setting {
+    max-width: 35px;
 }
 
-#my__logo {
+/* #my__logo {
     margin: 40px 10px;
     max-width: 100px;
     padding: 0 10px;
     background: #fff;
     border-radius: 20px;
-}
+} */
 
-.list {
+/* .list {
     align-items: center;
     margin-top: 100px;
     gap: 10px;
@@ -56,8 +173,8 @@ ul.show {
 
 .list li {
     margin-top: 20px;
-}
-
+} */
+/* 
 .back__btn {
     cursor: pointer;
     background: #fff;
@@ -65,17 +182,17 @@ ul.show {
     margin: 200px auto 0 auto;
     border-radius: 50%;
     padding: 2px 5px;
-}
+} */
 
-.backBTN {
+/* .backBTN {
     max-width: 30px;
 
 }
-
-nav a {
+ */
+/* nav a {
     color: #fff;
     margin-top: -30px;
-}
+} */
 
 .photo {
     max-width: 30px;
@@ -88,7 +205,7 @@ nav a {
     margin: 20px 40px;
 }
 
-hr {
+ hr {
     max-width: 70px;
     display: flex;
     margin-left: 65px;
@@ -98,7 +215,7 @@ hr {
 #profil__name {
     margin-left: 4px;
 }
-
+ 
 /* HERO SECTION */
 /* ################################# */
 /* the beginning of header CSS */
@@ -130,6 +247,7 @@ header {
     margin-left: -10px;
 
 }
+
 
 #profile {
     max-width: 45px;
@@ -494,8 +612,8 @@ main h2 {
 footer {
     height: 10%;
     background: #9e9bb1;
-    margin-left: -38px;
-    margin-left: -54px;
+    margin-left: -108px;
+    margin-top: 84px;
 }
 
 footer h3 {
@@ -694,6 +812,7 @@ footer h3 {
         text-align: center;
         margin-top: 30px;
         font-size: 20px;
+        margin-left: 0px;
     }
 
     .outerCicle {
@@ -780,21 +899,25 @@ footer h3 {
 
     main h2 {
         text-align: center;
+        margin-left: -80px;
     }
 
     .cards_Main_comment {
         flex-direction: column;
+        margin-left: -40px;
     }
 
     .right_card_Comment {
         max-width: 350px;
-        margin-left: -40px;
-        ;
+        margin-left: -30px;
+        margin-top: 15px;
+        
     }
 
     #webDesImage {
-        max-width: 400px;
+        width: 350px;
         height: 200px;
+        margin-left: -35px;
     }
 
     .Viewcomments {
