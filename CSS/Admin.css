@@ -4,65 +4,70 @@
     text-decoration: none;
     list-style-type: none;
 }
+
 body {
-    background: #F9FAFB;
+    background: #e9e7e7;
     font-family: 'Poppins', sans-serif;
     color: #1f1652;
 }
 
-.sidebar{
+.action {
+    position: fixed;
+    top: 120px;
+    right: 30px
+}
+#profile{
+    margin-top: -50px;
+}
+.sidebar {
     position: fixed;
     top: 0;
     left: -160px;
     width: 170px;
     height: 100%;
     background: #1f1652;
-    border-top-right-radius:20px ;
+    border-top-right-radius: 20px;
     transition: all 300ms ease-in-out;
 }
-.sidebar .toggle-btn{
+
+.sidebar .toggle-btn {
     position: absolute;
     top: 10px;
     right: 10px;
     width: 30px;
-    height:30px;
- cursor: pointer;
- 
+    height: 30px;
+    cursor: pointer;
 
 }
-.sidebar .toggle-btn span{
+
+.sidebar .toggle-btn span {
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 2px;
     background: #fff;
     transform: translate(0%);
     transition: all 300ms ease-in-out;
 }
-.sidebar .toggle-btn span:nth-child(1){
+
+.sidebar .toggle-btn span:nth-child(1) {
     top: 45%;
 }
-.sidebar .toggle-btn span:nth-child(2){
+
+.sidebar .toggle-btn span:nth-child(2) {
     top: 90%;
 }
-.links{
+
+.links {
     display: flex;
     flex-direction: column;
     line-height: 50px;
     justify-content: center;
-    margin:150px 0 0 -29px;
-   
-}
-#logo{
-    cursor: pointer;
-    border:1px solid #fff;
-    padding:5px 15px;
-    border-radius: 20px;
-    color: #1f1652;
-    background: #f5f5f5;
+    margin: 100px 0 0 -29px;
 
 }
 
-.links a{
+
+.links a {
     display: block;
     text-decoration: none;
     color: #f5f5f5;
@@ -71,56 +76,75 @@ body {
     margin-left: 20px;
     padding-right: 20px;
     text-align: right;
-    
-} 
- i{
+
+}
+
+i {
     display: inline-block;
     text-align: right;
     margin-left: 25px;
-   
+
 }
+
 .links a:active,
 .links a:focus,
-.links a:hover{
+.links a:hover {
     background: #fff;
     color: #1f1652;
     transition: all 200ms ease-in;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.logo{
+
+.logo {
     margin: 80px 0 0 50px;
     margin-left: 15px;
-   
+
 }
-.logo label{
-   color: #fff;
+
+.logo label {
+    color: #fff;
 }
-.logout{
-    margin: 50px 0 0 0px;
+
+.logout {
+    margin: 80px 0 0 35px;
     border-bottom: none;
 
 }
-.logout a{
+
+.logout a {
     color: #fff;
     text-decoration: none;
-    margin: 50px 0 -50px 50px;
+    margin: 50px 0 -50px 45px;
+
 }
-.sidebar.active{
+
+.logout a:hover {
+    background: #fff;
+    padding: 9px;
+    color: #1f1652;
+    border-radius: 20px;
+
+}
+
+.sidebar.active {
     left: 0px;
 }
-.sidebar.active .toggle-btn span:nth-child(1){
+
+.sidebar.active .toggle-btn span:nth-child(1) {
     top: 50%;
     transform: translateY(50%) rotate(45deg);
-   background:rgb(236, 66, 66);
+
 }
-.sidebar.active .toggle-btn span:nth-child(2){
-   display: none;
+
+.sidebar.active .toggle-btn span:nth-child(2) {
+    display: none;
 }
-.sidebar.active .toggle-btn span:nth-child(3){
+
+.sidebar.active .toggle-btn span:nth-child(3) {
     top: 50%;
     transform: translateY(50%) rotate(-45deg);
-    background: rgb(236, 66, 66);
+
 }
 
 /* 
@@ -153,17 +177,18 @@ ul.show {
 .rightSide {
     margin: 40px 0 0 150px;
 }
+
 #setting {
     max-width: 35px;
 }
 
-/* #my__logo {
-    margin: 40px 10px;
+#my__logo {
+    margin: 0px 10px;
     max-width: 100px;
     padding: 0 10px;
     background: #fff;
     border-radius: 20px;
-} */
+}
 
 /* .list {
     align-items: center;
@@ -203,9 +228,10 @@ ul.show {
 
 .profile {
     margin: 20px 40px;
+    cursor: pointer;
 }
 
- hr {
+hr {
     max-width: 70px;
     display: flex;
     margin-left: 65px;
@@ -215,7 +241,7 @@ ul.show {
 #profil__name {
     margin-left: 4px;
 }
- 
+
 /* HERO SECTION */
 /* ################################# */
 /* the beginning of header CSS */
@@ -227,9 +253,97 @@ header {
 
 .profiles {
     float: right;
-    margin: 10px 40px 0 0;
+    margin: -20px 30px 0 0;
+    cursor: pointer;
 
 }
+
+.action #profile {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.action .menuprofile {
+    position: absolute;
+    top: -35px;
+    right: -10px;
+    padding: 10px 20px;
+    background: #fff;
+    width: 200px;
+    box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.action .menuprofile.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.action .menuprofile::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+
+.action .menuprofile h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    padding: 20px 0;
+    font-weight: 500;
+    list-style: 1rem;
+}
+
+.action .menuprofile h3 span {
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+}
+
+.action .menuprofile ul li {
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    direction: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action .menuprofile ul li i {
+    margin-right: 15px;
+    max-width: 20px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.action .menuprofile ul li i:hover {
+    opacity: 0.5;
+}
+
+.action .menuprofile ul li a {
+    display: inline-block;
+    color: #1f1652;
+    font-weight: 500;
+    opacity: 100%;
+}
+
+.action .menuprofile ul li a:hover {
+    color: rebeccapurple;
+
+}
+
 
 #profile {
     margin: 0 0 0 10px;
@@ -495,6 +609,7 @@ main h2 {
     outline: 1px solid lightgray;
     padding: 30px 40px;
     border-radius: 20px;
+    background: #fff;
 }
 
 .input {
@@ -505,7 +620,7 @@ main h2 {
     border-radius: 2px;
 }
 
-.inputSearch::placeholder{
+.inputSearch::placeholder {
     padding-left: 20px;
 }
 
@@ -540,15 +655,15 @@ main h2 {
 
 
 .table_box {
-    margin: 20px 0;
+    margin: 90px 0;
 
 }
 
 
 .table_row {
     display: table;
-    width: 80%;
-    margin: 10px auto;
+    width: 90%;
+    margin: 4px auto;
     background: transparent;
     font-family: 'Poppins', sans-serif;
     padding: 12px 0;
@@ -607,20 +722,140 @@ main h2 {
 
 /* the end of main CSS */
 /* ################################# */
+
+
+
+/* THE BEGINNING OF EDIT-PROFILE CSS */
+/* ################################## */
+.cardContainer_Admin {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+    width: 350px;
+    height: 350px;
+     gap: 30px;
+    background: #1f1652;
+    top: 0px;
+    border-radius: 20px;
+    justify-content: center;
+    margin: auto;
+   
+}
+
+.main_Admin {
+    margin: auto 450px;
+    background: #f5f5f5;
+    width: 350px;
+    height: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header_Admin {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.header_Admin span i {
+    color: #d6d4d4;
+    margin-top: 50px;
+
+}
+
+.profilePhoto_Admin {
+    max-width: 100px;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+
+}
+
+.imageprof_Admin {
+    display: flex;
+    justify-content: center;
+}
+
+.cardContainer_Admin h3 {
+    display: flex;
+    flex-direction: column;
+    color: #e9e7e7;
+    justify-content: center;
+    text-align: center;
+    font-weight: 200;
+}
+.cardContainer_Admin h3 span{
+    font-size: 13px;
+    font-weight: 100;
+}
+.socialMedias_Admin {
+    display: flex;
+    justify-content: center;
+}
+
+.socialMedias_Admin ul {
+    display: flex;
+    margin-left: -20px;
+}
+
+.socialMedias_Admin ul li i {
+    color: #d6d4d4;
+}
+
+.moreBTN_Admin {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.clickMe {
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 3px 8px rgb(2, 7, 73, 0.7);
+
+}
+.clickMe:hover {
+    background: #1f1652;
+    color: #e9e7e7;
+    box-shadow: none;
+    transition-duration: 500ms;
+
+}
+
+.main_Admin h4 {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.main_Admin h5 {
+    text-align: center;
+    font-weight: 300;
+    color: #505050;
+}
+
+
+/* THE END OF EDIT-PROFILE CSS */
+/* ################################## */
 /* the beginning of footer CSS */
 
 footer {
-    height: 10%;
-    background: #9e9bb1;
+     height: 50px;
+    background: #322e4b;
     margin-left: -108px;
-    margin-top: 84px;
+    margin-top:110px;
+    
 }
 
 footer h3 {
     text-align: center;
     width: auto;
-
-    line-height: 80px;
+    color: #f5f5f5;
+    line-height: 40px;
 }
 
 /* the end of footer CSS */
@@ -640,10 +875,14 @@ footer h3 {
         padding: 0 10px;
         background: #fff;
         border-radius: 20px;
+        margin-left: 0px;
+        margin-top: -30px;
     }
 
     #profile {
-        display: none;
+        display: block;
+        margin-top: 0px;
+        margin-right: 20px;
     }
 
     hr {
@@ -675,6 +914,11 @@ footer h3 {
         padding-top: -60px;
     }
 
+    .logout {
+        margin-left: -30px;
+
+    }
+
     /* The end of Sidebar section CSS */
     /* ################################# */
 
@@ -684,14 +928,14 @@ footer h3 {
         margin-right: -40px;
     }
 
-    .menu {
+    /*  .menu {
         cursor: pointer;
         display: block;
         float: right;
         padding: 10px;
         margin-top: -10px;
     }
-
+ */
     #setting {
         max-width: 25px;
     }
@@ -703,6 +947,7 @@ footer h3 {
     /* ################################# */
     .cards_Main_bords {
         flex-direction: column;
+
     }
 
 
@@ -721,34 +966,44 @@ footer h3 {
     /* The the beginnig of Sidebar section CSS */
     /* ################################# */
 
-    #profileSidebar {
-        margin: -30px auto;
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -95px;
+        width: 130px;
+        height: 100%;
+        background: #1f1652;
+        border-top-right-radius: 20px;
+        transition: all 300ms ease-in-out;
     }
 
-    #my__nameSidebar {
-        margin-top: 35px;
-        margin-bottom: 0;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    nav ul {
-        margin: auto;
-        width: 250px;
-    }
-
-    nav ul li a {
+    .links a {
         font-size: 12px;
+        margin-right: -10px;
+        width: 120px;
+
     }
 
-    /* The beginning header of Sidebar section CSS */
-    /* ################################# */
+    .links i {
+        margin-left: 15px;
+    }
+
+    .sidebar.active {
+        left: 0px;
+    }
+
     header {
         margin-right: -40px;
     }
 
+    .toggle-btn {
+        position: relative;
+        left: 95px;
+
+    }
+
     .menu {
-        display: block;
+        display: none;
         float: right;
         padding: 10px;
         margin-top: -10px;
@@ -756,6 +1011,14 @@ footer h3 {
 
     #setting {
         max-width: 35px;
+        display: none;
+    }
+
+    .action .menuprofile {
+        top: -55px;
+        right: 26px;
+        width: 150px;
+
     }
 
     /* The end of header section CSS */
@@ -765,12 +1028,19 @@ footer h3 {
     /* ################################# */
     .cards_Main_bords {
         margin-top: 40px;
-        margin-left: 25px;
+        margin-left: -20px;
+    }
+
+    .action .menuprofile::before {
+
+        right: 15px;
+
     }
 
     main h1 {
-        margin-top: 50px;
-        margin-left: -100px;
+        margin-top: 30px;
+        margin-left: -60px;
+        font-size: 17px;
     }
 
     main .leftCards {
@@ -780,6 +1050,10 @@ footer h3 {
         margin-top: 20px;
         margin-left: -70px;
 
+    }
+
+    .rightSide {
+        margin-left: 140px;
     }
 
     main .rightCards {
@@ -795,13 +1069,13 @@ footer h3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         border-radius: 55px;
-        width: 300px;
+        width: 270px;
         height: 90px;
         border: 1px solid #1f1652;
-        padding-left: 0px;;
+        padding-left: 0px;
         background: #1f1652;
-       padding-bottom: 4px;
-       margin-bottom: 20px;
+        padding-bottom: 4px;
+        margin-bottom: 20px;
 
 
     }
@@ -822,9 +1096,9 @@ footer h3 {
         border-radius: 50%;
         max-width: fit-content;
         background: #fff;
-        margin-left: 198px;
+        margin-left: 170px;
     }
-  
+
     .innerCircle h1 {
         display: flex;
         outline: 1px solid #1f1652;
@@ -863,7 +1137,7 @@ footer h3 {
     /* ################################## */
     .table_box {
         width: 430px;
-        margin-left: -90px;
+        margin-left: -170px;
 
     }
 
@@ -899,23 +1173,25 @@ footer h3 {
 
     main h2 {
         text-align: center;
-        margin-left: -80px;
+        margin-left: -160px;
+
     }
 
     .cards_Main_comment {
         flex-direction: column;
-        margin-left: -40px;
+        margin-left: -60px;
+        width: 280px;
     }
 
     .right_card_Comment {
         max-width: 350px;
         margin-left: -30px;
         margin-top: 15px;
-        
+
     }
 
     #webDesImage {
-        width: 350px;
+        width: 330px;
         height: 200px;
         margin-left: -35px;
     }

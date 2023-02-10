@@ -904,6 +904,9 @@ nav{
         width: 350px;
         margin-right: 50px;
     }
+    .containers{
+        width: auto;
+    }
 
     .photo {
         max-width: 300px;
@@ -1040,8 +1043,8 @@ font-size: 2rem;
     }
 
     /* FOOTER SECTION */
-
-    .navbarFooter {
+   
+   .navbarFooter {
         max-width: 250px;
         display: flex;
         gap: 60px;
