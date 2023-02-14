@@ -79,7 +79,9 @@ nav ul li {
     margin-right: 40px;
 
 }
-
+nav ul li a{
+    color: #1F1652;
+}
 nav ul li a::after {
     content: "";
     height: 2px;
