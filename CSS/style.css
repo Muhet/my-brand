@@ -107,7 +107,6 @@ nav ul li a:hover::after {
 
 .active {
     background-color: #1f1652;
-
 }
 
 .active ul li a {
@@ -240,9 +239,9 @@ hr {
 
 
 .portrate #motivation {
-    color: darkgray;
+    color: #1f1652;
     text-align: left;
-    font-size: 13px;
+    font-size: 15px;
 
 
 }
@@ -602,6 +601,7 @@ hr {
 .contactIcon {
     max-width: 20px;
     padding-right: 5px;
+  
 }
 
 .profilePhoto {
